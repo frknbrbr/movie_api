@@ -8,6 +8,9 @@ const Actor_Movie = seq.define('actors_movies', {
     },
     movie_id: {
       type: Sequelize.INTEGER
+    },
+    isStar: {
+      type: Sequelize.BOOLEAN
     }
   });
 

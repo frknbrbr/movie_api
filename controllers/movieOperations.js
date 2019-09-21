@@ -33,9 +33,9 @@ module.exports = {
 
 
     },
-    findMovieByTitle: (movie_title) => {
+    findMoviesByTitle: (movie_title) => {
         if (movie_title) {
-            return Movie.findOne({
+            return Movie.findAll({
                 where: {
                     title: movie_title
                 }
@@ -49,9 +49,9 @@ module.exports = {
 
 
     },
-    findMovieByGenre: (movie_genre) => {
+    findMoviesByGenre: (movie_genre) => {
         if (movie_genre) {
-            return Movie.findOne({
+            return Movie.findAll({
                 where: {
                     genre: movie_genre
                 }
